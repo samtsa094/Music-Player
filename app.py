@@ -62,5 +62,5 @@ def repeat():
         return render_template("index.html", music_files=music_files, selected_song=selected_song[1:-1], selected_song_name=next((song["Name"] for song in music_files if song["Path"] == selected_song), ""))
     return render_template("index.html", music_files=music_files, selected_song=None, selected_song_name=None)
 
-if __name__ == "__main__":
-    app.run(debug = True)
+# if __name__ == "__main__":
+#     app.run(debug = True)
